@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header with search bar and menu -->
+  <header>
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search for songs, artists...">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#playlist">Playlist</a></li>
+        <li><a href="#albums">Albums</a></li>
+        <li><a href="#artists">Artists</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <!-- Playlist Section -->
+    <section id="playlist">
+      <h2>Playlist</h2>
+      <ul id="song-list">
+        <!-- Playlist items will be added here dynamically -->
+      </ul>
+    </section>
+
+    <!-- Music Player Section -->
+    <section id="music-player">
+      <h3>Now Playing: <span id="current-song-title">No song selected</span></h3>
+      <div id="album-cover-container">
+        <img id="album-cover" src="" alt="Album Cover">
+      </div>
+      <audio id="audio-player" controls>
+        Your browser does not support the audio element.
+      </audio>
+
+      <div class="controls">
+        <button id="prev-btn">Previous</button>
+        <button id="play-pause-btn">Play</button>
+        <button id="next-btn">Next</button>
+        <input type="range" id="volume-control" min="0" max="1" step="0.01" value="1">
+        <span id="volume-display">Volume: 100%</span>
+        <div class="progress-bar">
+          <input type="range" id="progress-bar" value="0" min="0" max="100" step="1">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

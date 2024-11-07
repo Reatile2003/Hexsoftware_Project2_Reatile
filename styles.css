@@ -1,0 +1,134 @@
+/* Basic Reset */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Header styles */
+header {
+  background-color: #1a1a1a;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff4081;
+}
+
+/* Playlist and music player styles */
+#playlist {
+  padding: 20px;
+  text-align: center;
+}
+
+#song-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#song-list li {
+  padding: 10px;
+  background-color: #333;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#song-list li:hover {
+  background-color: #ff4081;
+}
+
+#music-player {
+  padding: 20px;
+  text-align: center;
+}
+
+#album-cover-container {
+  margin-bottom: 20px;
+}
+
+#album-cover {
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff4081;
+}
+
+input[type="range"] {
+  width: 200px;
+  margin: 0 10px;
+}
+
+#volume-display {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.progress-bar {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#progress-bar {
+  width: 100%;
+}
